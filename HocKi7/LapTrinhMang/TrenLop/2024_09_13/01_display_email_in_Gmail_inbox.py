@@ -24,6 +24,7 @@ def check_email(username, password):
         pprint.pprint(data[0][1])
     mailbox.close()
     mailbox.logout()
+    
 if __name__=='__main__':
     username = input("enter email account: ")
     password = getpass.getpass(prompt="enter password: ")
