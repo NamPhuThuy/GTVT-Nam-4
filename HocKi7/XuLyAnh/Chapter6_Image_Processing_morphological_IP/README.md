@@ -1,5 +1,5 @@
 ## Morphological
-- Morphological operations (Các phép toán hình thái) là 1 tập hợp các kỹ thuật được dùng trong **Xử lý ảnh** để phân tích và chỉnh sửa hình dag và cấu trúc của các đối tượng trong 1 ảnh
+- Morphological operations (Các phép toán hình thái) là 1 tập hợp các kỹ thuật được dùng trong **Xử lý ảnh** để phân tích và chỉnh sửa hình dạng và cấu trúc của các đối tượng trong 1 ảnh
 
 Một số phép toán hình thái
 - Erosion (Xói mòn): Thu hẹp ranh giới của các đối tượng trong một hình ảnh. 
@@ -58,10 +58,12 @@ SE_2 áp dụng lên:
 
 ## Một số phép toán hình thái
 ### Erosion
-<table>
-  <td><img src="images/erosion_structural_element.png" alt="Image 1 description " width=200px > <br> <p align="center">SE sử dụng</p>
-  </td>
-</table>
+SE sử dụng:
+
+| 0 | 1 | 0 |
+|---|---|---|
+| 1 | 1 | 1 |
+| 0 | 1 | 0 |
 
 Ma trận ban đầu:  
 
@@ -75,6 +77,19 @@ Ma trận ban đầu:
 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
+**Cách làm**
+
+<img src="images/erosion_formula.png" alt="Image 2 description" width=200px><br>
+- Giải thích
+  - A: cửa sổ đang xét trên ma trận ban đầu
+  - B: SE (Structural Element)
+  - A^c: phần bù của A
+
+
+- Sử dụng SE như 1 cái cửa sổ, xét lần lượt từng ma trận con trong ma trận ban đầu (các ma trận con này có cùng cỡ với SE)
+- Nếu xảy ra **hiện tượng Fit** thì giá trị tại vị trí đấy ở ma trận mới sẽ bằng 1, còn lại thì bằng 0
+
+
 Ma trận sau khi xử lý:
 
 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -87,6 +102,7 @@ Ma trận sau khi xử lý:
 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
+
 <table>
   <tr>
     <td><img src="images/erosion_input_example.png" alt="Image 1 description " width=200px> <br> <p align="center">Input</p>
@@ -96,3 +112,59 @@ Ma trận sau khi xử lý:
 </table>
 
 ### Dilation
+SE sử dụng:
+
+| 0 | 1 | 0 |
+|---|---|---|
+| 1 | 1 | 1 |
+| 0 | 1 | 0 |
+
+Ma trận ban đầu:
+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+|---|---|---|---|---|---|---|---|
+| 0 | 0 | 0 | 1 | 1 | 1 | 0 | 0 |
+| 0 | 0 | 1 | 1 | 1 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+**Cách làm**
+
+<img src="images/dilation_formula.png" alt="Image 2 description" width=200px><br>
+
+- Sử dụng SE như 1 cái cửa sổ, xét lần lượt từng ma trận con trong ma trận ban đầu (các ma trận con này có cùng cỡ với SE)
+- Nếu xảy ra **hiện tượng Hit** thì giá trị tại vị trí đấy ở ma trận mới sẽ bằng 1, còn lại thì bằng 0
+
+Ma trận sau khi xử lý:
+
+| 0 | 0 | 0 | 1 | 1 | 1 | 0 | 0 |
+|---|---|---|---|---|---|---|---|
+| 0 | 0 | 1 | 1 | 1 | 1 | 1 | 0 |
+| 0 | 1 | 1 | 1 | 1 | 1 | 1 | 0 |
+| 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 |
+| 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+
+<table>
+  <tr>
+    <td><img src="images/dilation_input_example.png" alt="Image 1 description " width=200px> <br> <p align="center">Input</p>
+    </td>
+    <td><img src="images/dilation_output_example.png" alt="Image 2 description" width=200px><br> <p align="center">Output</p></td>
+  </tr>
+</table>
+
+### Closing and Opening
+- Opening: thực hiện phép co (Erosion) rồi giãn (Dilation)
+
+<img src="images/opening_fomula.png" alt="Image 2 description" width=200px><br>
+<img src="images/opening_example.png" alt="Image 2 description" width=500px><br>
+
+- Closing: thực hiện phép giãn (Dilation) rồi co (Erosion)  
+
+<img src="images/closing_formula.png" alt="Image 2 description" width=200px><br>
