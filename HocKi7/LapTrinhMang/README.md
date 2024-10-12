@@ -8,7 +8,7 @@ Client gửi yêu cầu (request) – Server cung cấp dịch vụ
 - Server không cần biết về client 
 - Client phải biết một số thông tin về server (nơi đặt server)
 
-  ![Mô hình client-server](images/c5_1.png)
+  ![Mô hình client-server](Chuong5_Socket/images/c5_1.png)
 
 ## Socket
 Socket là một giao diện lập trình ứng dụng mạng 
@@ -38,11 +38,11 @@ Khi socket được tạo – nó phải gắn (bound) với một địa chỉ
 mạng và cổng  
 -> Có thể truyền/nhận dữ liệu qua mạng
 
-![](images/c5_2.png)
+![](Chuong5_Socket/images/c5_2.png)
 
 Socket trong ứng dụng mạng
 
-![](images/c5_3.png)
+![](Chuong5_Socket/images/c5_3.png)
 
 Client/server giao tiếp qua socket
 Request/response loop 
@@ -51,12 +51,12 @@ Request/response loop
 - Kết thúc: client đóng kết nối 
 - Server trở về trạng thái listen
 
-![](images/c5_4.png)
+![](Chuong5_Socket/images/c5_4.png)
 
 ## Socket hướng kết nối (connection-oriented)
 Sử dụng giao thức TCP để thiết lập kết nối 
 - Khi kết nối được thiết lập: dữ liệu có thể truyền/nhận
-  ![](images/c5_5.png)
+  ![](Chuong5_Socket/images/c5_5.png)
 
 ## TCP - Socket
 Import thư viện socket

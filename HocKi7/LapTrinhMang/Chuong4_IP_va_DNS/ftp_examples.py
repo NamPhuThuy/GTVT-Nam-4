@@ -61,6 +61,6 @@ if __name__ == "__main__":
     username = "demo"
     password = "password"
     remote_file = "remote_file.txt"
-    local_file = "downloaded_file.txt"
+    local_file = "../TrenLop/2024_09_27_FTP/downloaded_file.txt"
     
     download_file(ftp_server, username, password, remote_file, local_file)
