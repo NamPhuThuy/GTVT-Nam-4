@@ -7,6 +7,7 @@ def lowPass_Ideals(D0,U,V):
     D = np.zeros((U, V))
     U0 = int(U / 2)
     V0 = int(V / 2)
+    
     # Tính khoảng cách
     for u in range(U):
         for v in range(V):
@@ -24,8 +25,8 @@ def lowPass_Ideals(D0,U,V):
 
 if __name__ == "__main__":
     # Đọc ảnh
-    image = cv2.imread("test.tif", 0)
-    image = cv2.resize(src=image, dsize=(100, 100))
+    image = cv2.imread("image/4x4pixels.png", 0)
+    # image = cv2.resize(src=image, dsize=(100, 100))
     # Chuyển các pixel của ảnh vào mảng 2 chiều f
     f = np.asarray(image)
     M, N = np.shape(f)  # Chiều x và y của ảnh
@@ -50,12 +51,13 @@ if __name__ == "__main__":
     # DFT chiều P - theo cột
     for i in range(P):
         dft_cot[i] = DFT1D(F_xy_p[i])
+        
     # DFT chiều Q - theo hàng
     for j in range(Q):
         dft_hang[:, j] = DFT1D(dft_cot[:, j])
 
     # Bước 4: Gọi hàm lowPass_Ideals tạo bộ lọc thông thấp Ideals
-    H_uv = lowPass_Ideals(60,P,Q)
+    H_uv = lowPass_Ideals(60, P, Q)
 
     # Bước 5: Nhân ảnh sau khi DFT với ảnh sau khi lọc
     G_uv = np.multiply(dft_hang, H_uv)

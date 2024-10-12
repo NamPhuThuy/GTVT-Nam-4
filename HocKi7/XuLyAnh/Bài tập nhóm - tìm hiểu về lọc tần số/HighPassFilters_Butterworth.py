@@ -21,8 +21,8 @@ def butterworthHP(D0,U,V,n):
 
 if __name__ == "__main__":
     # Đọc ảnh
-    image = cv2.imread("test.tif", 0)
-    image = cv2.resize(src=image, dsize=(100, 100))
+    image = cv2.imread("image/4x4pixels.png", 0)
+    # image = cv2.resize(src=image, dsize=(100, 100))
     # Chuyển các pixel của ảnh vào mảng 2 chiều f
     f = np.asarray(image)
     M, N = np.shape(f)  # Chiều x và y của ảnh

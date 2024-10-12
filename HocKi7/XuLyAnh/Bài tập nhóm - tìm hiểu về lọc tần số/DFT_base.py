@@ -25,8 +25,8 @@ def IDFT1D(img):
         for m in range(U):
             e = np.exp(1j * 2 * np.pi * m * n / U)
             sum += img[m] * e
-            print(f"accumulated sum = {sum}")
+            # print(f"accumulated sum = {sum}")
         pixel = sum / U
         outarry[n] = pixel
-        print(f"DFT[{m}] = {outarry[m]}")
+        # print(f"DFT[{m}] = {outarry[m]}")
     return outarry
