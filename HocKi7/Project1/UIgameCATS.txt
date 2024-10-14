@@ -1,0 +1,31 @@
+1. Main Screen:
+- Garage: Click on Fighting Machine
+- Shop
+- Loot Crate (up to 4 slots)
+
+
+
+2. Before Battle:
+- Name of fighting scene
+- a list of Enemies' name
+- Button: Back to Garage, Fight
+
+
+3. Battle Screen:
+- Health bar
+- "Tap to watch" button
+- Player's Information: Name, Health point, Attack point(power)
+- Win Streak
+- Popup: Victory, Lose
+
+
+4. Garage:
+- Shopping Cart
+- Gold
+- Equipment
+- Information of the Equipment being chosen: Level, Name, Health point(Body, Wheel, No-damage Weapon), Energy, Atk point(Weapon)
+- Tống chỉ số: Health point, Atk point, Energy (ngu tiếng Anh nhưng lỡ viết r :((
+- Button: Back to Main Screen
+
+
+ 
