@@ -5,7 +5,7 @@ if __name__=='__main__':
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.bind(('127.0.0.1', 1234))
     s.listen(5)
-    client_sk,client_addr=s.accept()
+    client_sk, client_addr = s.accept()
     print(f"Client {client_addr} connected")
 
     data = "hello from server !"

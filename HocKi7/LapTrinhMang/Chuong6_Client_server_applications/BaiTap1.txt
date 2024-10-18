@@ -1,0 +1,5 @@
+Xây dựng ứng dụng client - server. Bên client gửi sang 1 xâu bất kỳ, server gửi về 1 xâu đã chuẩn hóa (xâu chuẩn hóa là xâu có chữ đầu tiên hoặc sau dấu chấm là viết hoa, sau dấu chấm hoặc dấu phẩy có đúng 1 dấu cách, giữa các từ chỉ có 1 dấu cách...)
+
+
+VD: "   hello   ae,toi     la.dung "
+->  "Hello ae, toi la. Dung."
