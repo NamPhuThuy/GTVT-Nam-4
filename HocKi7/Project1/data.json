@@ -1,0 +1,98 @@
+{
+    "Player":
+    [
+        {
+            "_id": "",
+            "email": "",
+            "username": "",
+            "password": "",
+            "name": "",
+            "gold": "",
+            "trophy": "",
+            "isMatching": "",
+            //Danh sach trang bi so huu
+            //Xe hien tai (dang co than gi, vu khi gi, banh xe gi)
+            
+            
+            
+        }
+    ],
+
+    "Vehicle":
+    {
+        "ThanXe":{},
+        "Weapons":
+        [],
+        "Tire":{}
+    },
+
+    "ThanXe":
+    {
+        "_id": "",
+        "name": "",
+        "hp": "",
+        "level": "",
+        "slotNumber": "",
+        "rarity": "",
+        "powerCap": ""
+        
+    },
+
+    "Weapon":
+    {
+        "_id": "",
+        "name": "",
+        "level": "",
+        "attackSpeed": "",
+        "attackType": "", 
+        "damage": "", 
+        "power": "",
+        "rarity": ""
+
+    },
+
+    "Wheel":
+    {
+        "_id": "",
+        "level": "",
+        "hp": "", 
+        "name": "",
+        "rarity": "",
+
+        "size": ""
+        
+
+    },
+
+    "Chest":
+    {
+        "_id": "",
+            "name": "Epic Chest",
+            "rarity": "epic",
+            "price": 500,
+            "contents": [
+              {
+                "item_type": "weapon",
+                "item_name": "Laser Cannon",
+                "rarity": "epic",
+                "drop_rate": 0.05
+              },
+              {
+                "item_type": "body",
+                "item_name": "Titanium Body",
+                "rarity": "rare",
+                "drop_rate": 0.20
+              }
+            ]
+
+            
+
+    }
+    
+
+    
+
+    
+
+    
+}
