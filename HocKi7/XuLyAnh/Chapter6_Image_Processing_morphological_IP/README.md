@@ -168,3 +168,5 @@ Ma trận sau khi xử lý:
 - Closing: thực hiện phép giãn (Dilation) rồi co (Erosion)  
 
 <img src="images/closing_formula.png" alt="Image 2 description" width=200px><br>
+
+## Hit or Miss Transform
