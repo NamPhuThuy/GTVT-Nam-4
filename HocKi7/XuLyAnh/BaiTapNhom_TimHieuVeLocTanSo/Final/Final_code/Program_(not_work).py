@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import cv2
-from Final.Final_code.Filters import *
-from Final.Final_code.DFT_base import *
+from Filters import *
+from DFT_base import *
 
 # Load the image
 img = np.asarray(cv2.imread('../image/lenna_2.png', 0))  # Assuming grayscale

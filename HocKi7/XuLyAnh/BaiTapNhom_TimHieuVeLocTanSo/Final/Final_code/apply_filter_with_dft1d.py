@@ -1,12 +1,12 @@
-from Final.Final_code.DFT_base import *
-from Final.Final_code.Filters import *
+from DFT_base import *
+from Filters import *
 
 if __name__ == "__main__":
     #Pre-config
     np.set_printoptions(precision=2)
 
     # Đọc ảnh
-    image = cv2.imread("../image/test.png", cv2.IMREAD_GRAYSCALE)
+    image = cv2.imread("../image/lenna_2.png", cv2.IMREAD_GRAYSCALE)
     # image = cv2.resize(src=image, dsize=(50, 50))
 
     # Chuyển các pixel của ảnh vào mảng 2 chiều f
@@ -55,9 +55,9 @@ if __name__ == "__main__":
 
 
     # Bước 4: Gọi hàm GaussianLP tạo bộ lọc thông thấp Gaussian
-    H_uv = gen_gaussian_high_pass_filter(30, P, Q)
+    # H_uv = gen_gaussian_high_pass_filter(30, P, Q)
     # H_uv = gen_butterworth_high_pass_filter(60,P,Q,2)
-    # H_uv = gen_butterworth_low_pass_filter(30,P,Q,2)
+    H_uv = gen_butterworth_low_pass_filter(30,P,Q,2)
     # H_uv = gen_ideal_low_pass_filter(60, P, Q)
     # H_uv = gen_ideal_high_pass_filter(10, P, Q)
     
@@ -151,7 +151,7 @@ if __name__ == "__main__":
     ax9.set_title('Bước 7: Ảnh cuối cùng MxN')
     ax9.axis('off')
 
-    output_path = '../result_image/test.png'
+    output_path = '../result_image/ideal_highpass_example.png'
 
     plt.savefig(output_path)
     print(f"Hình ảnh đã được lưu tại: {output_path}")

@@ -1,5 +1,5 @@
-from Final.Final_code.DFT_base import *
-from Final.Final_code.Filters import *
+from DFT_base import *
+from Filters import *
 
 if __name__ == "__main__":
     #Pre-config
