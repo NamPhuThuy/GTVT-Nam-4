@@ -44,7 +44,7 @@ if __name__ == "__main__":
     cv2.destroyAllWindows()
     
     
-    np.savetxt('binary_image.txt', thresh, fmt='%d')
+    np.savetxt('c2-binary-image.txt', thresh, fmt='%d')
     
     # Convert binary image into 1-dimension array
     
