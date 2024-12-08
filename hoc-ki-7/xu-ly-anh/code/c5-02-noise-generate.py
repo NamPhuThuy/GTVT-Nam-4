@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-from Utils import show_image
+from utils import show_image
 
 def generate_gaussian_noise(image, mean=0, stddev=25):
     """
@@ -98,7 +98,7 @@ def generate_impulse_noise(image, noise_density):
 
 if __name__ == "__main__":
     # Load an image
-    image = cv2.imread('image/gray_wukong.jpg')
+    image = cv2.imread('../images/gray_wukong.jpg')
 
     # Generate Gaussian noise and add it to the image
     gaussian_noise_image = generate_gaussian_noise(image)
