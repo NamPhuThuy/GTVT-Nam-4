@@ -42,13 +42,13 @@ Mức xám (**gray scale**) là thang đo độ sáng của 1 điểm ảnh tron
 <img src="images/img-01-06.png" width="400">
 
 Phân loại digital image
-- Binary image: ảnh nhị phân, chỉ có 2 màu đen-trắng
+- Binary image: ảnh nhị phân, chỉ có 2 màu đen-trắng  
 <img src="images/img-01-07.png" width="400">
 
-- Gray image: ảnh xám, được xây dựng từ 1 ma trận màu
+- Gray image: ảnh xám, được xây dựng từ 1 ma trận màu  
 <img src="images/img-01-08.png" width="400">
 
-- Color image: ảnh màu, được xây dựng từ nhiều ma trận màu
+- Color image: ảnh màu, được xây dựng từ nhiều ma trận màu  
 <img src="images/img-01-09.png" width="400">
 
 ## Phần 2: Một số mô hình màu
@@ -103,7 +103,7 @@ Một số ứng dụng của **Xử lý ảnh**:
 ## Phần 1: Cải thiện hình ảnh là gì?
 Cải thiện hình ảnh (**image enhancement**) là quá trình xử lý kỹ thuật số để cải thiện chất lượng của hình ảnh thông quá các khía cạnh của ảnh như: độ tương phản (**contrast**), độ sáng (**brightness**), độ sắc nét (**sharpness**), giảm nhiễu (**noise reduction**)
 
-<img src="images/img-02-01.png" width="400">
+<img src="images/img-03-01.png" width="400">
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Phần 2: Miền không gian
@@ -117,7 +117,7 @@ $$
 - $g(x, y)$: ảnh đã xử lý
 - $T$: toán tử được áp dụng vào vùng lân cận của (x, y)
 
-<img src="images/img-02-02.png" width="400">
+<img src="images/img-03-02.png" width="400">
 
 ### Kỹ thuật xử lý điểm
 Khi vùng lân cận đạt mức nhỏ nhất (size = 1*1) - bằng đúng 1 điểm ảnh, các phép toán cải thiện ảnh sẽ được biểu diễn thành: 
@@ -128,11 +128,11 @@ $$
 - $r$: điểm ảnh trước khi xử lý
 - $s$: điểm ảnh sau khi được xử lý
 
-<img src="images/img-02-03.png" alt="Image description" width="400px">
+<img src="images/img-03-03.png" alt="Image description" width="400px">
 
 <table>
     <tr>
-        <td><img src="images/img-02-03-b.png" alt="Image description" width="400px"></td>
+        <td><img src="images/img-03-04.png" alt="Image description" width="400px"></td>
     </tr>
     <tr>
       <th>Một số biến đổi mức xám</th>
@@ -142,7 +142,7 @@ $$
 #### Ảnh âm bản (**negative image**)
 <table>
     <tr>
-        <td><img src="images/img-02-04.png" alt="Image description" width="400px"></td>
+        <td><img src="images/img-03-05.png" alt="Image description" width="400px"></td>
     </tr>
     <tr>
         <th>mammogram and negative image of mammogram</th>
@@ -157,17 +157,17 @@ Công thức chung của biến đổi logarit: $s = c * log(1 + r)$. Giá trị
 
 Kỹ thuật dùng để tăng cường độ sáng các vùng tối của ảnh 
 
-<img src="images/img-02-05.png" alt="Image description" width="400px">
+<img src="images/img-03-06.png" alt="Image description" width="400px">
 
 #### Biến đổi luật lũy thừa (Power Law - Gamma Correction Transformations)
 Công thức chung: $s = c*r^{\gamma}$. Giá trị $c$ thường là 1
 
-<img src="images/img-02-06.png" alt="Image description" width="400px">
+<img src="images/img-03-07.png" alt="Image description" width="400px">
 
 <table>
     <tr>
-        <td><img src="images/img-02-07.png" alt="Image description" width="350px"></td>
-        <td><img src="images/img-02-08.png" alt="Image description" width="350px"></td>
+        <td><img src="images/img-03-08.png" alt="Image description" width="350px"></td>
+        <td><img src="images/img-03-09.png" alt="Image description" width="350px"></td>
     </tr>
     <tr>
         <th>Highlight</th>
@@ -179,24 +179,22 @@ Công thức chung: $s = c*r^{\gamma}$. Giá trị $c$ thường là 1
 
 <table>
     <tr>
-        <td><img src="images/img-02-09.png" alt="Image description" width="400px"></td>
+        <td><img src="images/img-03-10.png" alt="Image description" width="400px"></td>
     </tr>
 </table>
 
 Biến đổi ngưỡng hữu ích cho việc phân đoạn (**segmentation**), khi chúng ta muốn tách những vật thể ra khỏi background
 - Đặt ngưỡng thấp -> hình ảnh thu được sẽ chứa nhiều giá trị cường độ cao. Và ngược lại
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Các kỹ thuật biến đổi tuyến tính từng phần
 Ta có thể áp dụng những phép biến đổi khác nhau cho mỗi ngưỡng, để thu được ảnh kết quả theo ý muốn  
 
 <table>
     <tr>
-        <td><img src="images/img-02-10.png" alt="Image description" width="400px"></td>
+        <td><img src="images/img-03-11.png" alt="Image description" width="400px"></td>
     </tr>
     <tr>
-        <td><img src="images/img-02-11.png" alt="Image description" width="400px"></td>
+        <td><img src="images/img-03-12.png" alt="Image description" width="400px"></td>
     </tr>
 </table>
 
@@ -205,16 +203,17 @@ Bằng cách tách biệt các bit cụ thể của giá trị pixel trong hình
 
 <table>
     <tr>
-        <td><img src="images/img-02-12.png" alt="Image description" width="400px"></td>
+        <td><img src="images/img-03-13.png" alt="Image description" width="400px"></td>
     </tr>
     <tr>
-        <td><img src="images/img-02-13.png" alt="Image description" width="400px"></td>
+        <td><img src="images/img-03-14.png" alt="Image description" width="400px"></td>
     </tr>
 </table>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Phần 3: Miền tần số
 (**frequency domain**)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Histogram 
 
@@ -222,15 +221,16 @@ Biểu đồ histogram của hình ảnh cho chúng ta biết sự phân bố c�
 
 <table>
     <tr>
-        <td><img src="images/img-02-14.png" alt="Image description" width="400px"></td>
+        <td><img src="images/img-03-15.png" alt="Image description" width="400px"></td>
     </tr>
     <tr>
         <th>Hình ảnh và biểu đồ histogram của chúng</th>
     </tr>
 </table>
 
-## Phần 4: Combination
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# Chương 4: Lọc trong miền tần số
 
 # Tài liệu tham khảo
 - [What is Digital Image Processing? | Image Processing #1](https://medium.com/@gokcenazakyol/1-what-is-digital-image-processing-image-processing-2da13b5dfa9c) - Medium
