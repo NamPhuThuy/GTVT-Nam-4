@@ -6,9 +6,9 @@ import os
 def get_weather_info(city_name, api_key, units='metric', stop_event=None):
 
     while not stop_event.is_set():
-
         try:
             url = f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}&units={units}"
+            print(url)
             response = requests.get(url)
             response.raise_for_status()  # Kiểm tra nếu có lỗi HTTP
 
