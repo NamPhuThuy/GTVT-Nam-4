@@ -1,6 +1,6 @@
 import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
+from code_2.email import MIMEMultipart
+from code_2.email import MIMEText
 
 # dùng mật khẩu ứng dụng của email
 # cách bật: https://support.google.com/accounts/answer/185833?hl=vi

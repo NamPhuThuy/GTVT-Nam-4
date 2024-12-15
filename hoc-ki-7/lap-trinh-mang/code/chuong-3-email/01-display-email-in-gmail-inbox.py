@@ -27,5 +27,6 @@ def check_email(username, password):
     
 if __name__=='__main__':
     username = input("enter email account: ")
+    print("password: ")
     password = getpass.getpass(prompt="enter password: ")
     check_email(username, password)

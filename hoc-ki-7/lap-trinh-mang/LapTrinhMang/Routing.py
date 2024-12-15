@@ -1,6 +1,4 @@
-"""
-@author: Martin Valentine
-"""
+
 
 """ 
 1. Dùng thư viện googlemap tính khoảng cách từ 2 địa điểm cho trước. 
@@ -34,9 +32,11 @@ def get_route():
     destination = input("Enter your destination address: ")
 
     # Geocode start location
-    start_coords = client.pelias_search(start)['features'][0]['geometry']['coordinates']
+    start_coords = client.pelias_search(
+        start)['features'][0]['geometry']['coordinates']
     # Geocode destination location
-    destination_coords = client.pelias_search(destination)['features'][0]['geometry']['coordinates']
+    destination_coords = client.pelias_search(
+        destination)['features'][0]['geometry']['coordinates']
 
     # Get route
     route = client.directions(
@@ -46,8 +46,10 @@ def get_route():
     )
 
     # Extract distance and duration
-    distance = route['features'][0]['properties']['segments'][0]['distance'] / 1000  # meters to kilometers
-    duration = route['features'][0]['properties']['segments'][0]['duration'] / 60  # seconds to minutes
+    # meters to kilometers
+    distance = route['features'][0]['properties']['segments'][0]['distance'] / 1000
+    # seconds to minutes
+    duration = route['features'][0]['properties']['segments'][0]['duration'] / 60
 
     # Print route information
     print(f"Start: {start}")
@@ -57,25 +59,30 @@ def get_route():
 
     return
 
+
 def get_ip_info(ipaddr):
     """Fetches country, continent, and timezone information for a given IP address."""
     # download database in this https://g...content-available-to-author-only...b.com/P3TERX/GeoLite.mmdb
 
     # Lookup IP address
-    reader = geoip2.database.Reader('F:/UTC/SEMESTER 7/Network Programming/Code/GeoLite2-City.mmdb')  # Path to Database 
+    reader = geoip2.database.Reader(
+        'F:/UTC/SEMESTER 7/Network Programming/Code/GeoLite2-City.mmdb')  # Path to Database
     response = reader.city(ipaddr)
 
     if response is not None:
         print("Country: ", response.country.name)
         print("Continent: ", response.continent.name)
-        print("Timezone: ", response.location.time_zone)  # https://m...content-available-to-author-only...b.io/GeoIP2-php/doc/v2.8.0/class-GeoIp2.Record.Location.html
+        # https://m...content-available-to-author-only...b.io/GeoIP2-php/doc/v2.8.0/class-GeoIp2.Record.Location.html
+        print("Timezone: ", response.location.time_zone)
     else:
         print("No information found for this IP address.")
 
     # Close the reader
     reader.close()
 
-def get_domain_info(target_domain):  # https://m...content-available-to-author-only...m.com/@jsquared7/dns-enumeration-using-python-772bbeea7b0e
+
+# https://m...content-available-to-author-only...m.com/@jsquared7/dns-enumeration-using-python-772bbeea7b0e
+def get_domain_info(target_domain):
     """Fetches DNS records for a given domain."""
     # Set the record type
     record_types = ["A", "AAAA", "CNAME", "MX", "NS", "SOA", "TXT"]
@@ -97,6 +104,7 @@ def get_domain_info(target_domain):  # https://m...content-available-to-author-o
 
     return
 
+
 if __name__ == "__main__":
 
     """
@@ -105,11 +113,11 @@ if __name__ == "__main__":
             {API Key cua ban}  Truy cap https://o...content-available-to-author-only...e.org/
             Ha Noi
             Noi Bai International Airport, Phú Minh, Sóc Sơn, Hà Nội, Vietnam
-            
+
         IP: 104.244.42.129
-        
+
         Domain: facebook.com
-            
+
     """
 
     # Get route
@@ -125,5 +133,3 @@ if __name__ == "__main__":
     domain = input("Enter domain: ")
     get_domain_info(domain)
     print("\n ************** end function **************\n")
-
-    

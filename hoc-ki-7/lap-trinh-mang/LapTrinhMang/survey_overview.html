@@ -1,0 +1,152 @@
+    <script>
+        alert('Bạn chưa nhập mã sinh viên!');
+        window.location = "../index.php";
+    </script>
+    <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+    <title>Danh sách khảo sát</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="../css/bootstrap.css" rel="stylesheet"/>
+    <!-- FONT AWESOME ICONS  -->
+    <link href="../css/font-awesome.css" rel="stylesheet"/>
+    <!-- CUSTOM STYLE  -->
+    <link href="../css/style.css?v=7" rel="stylesheet"/>
+    <link href="../css/sidebar.css" rel="stylesheet"/>
+    <link rel="icon"
+          type="image/png"
+          href="../img/logo.png">
+    <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <strong>Support: </strong><a href="mailto: support@st.utc.edu.vn" style="color:white !important;">support@st.utc.edu.vn</a>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END-->
+    <div class="navbar navbar-inverse set-radius-zero">
+        <div class="container">
+			<a class="navbar-brand">
+
+                     <img src="../img/logo.png" />
+                </a>
+			<div class="left-div col-md-4"><b style="color:white;font-size:18pt;font-family:'Roboto', sans-serif;">Trường ĐH Giao thông vận tải</b><br><b style="color:white;font-size:10pt;font-family:'Roboto', sans-serif;">UNIVERSITY OF TRANSPORT AND COMMUNICATIONS</b>
+                <div class="user-settings-wrapper">
+
+                </div>
+            </div>
+            <div class="right-div col-md-7">HỆ THỐNG THÔNG TIN SINH VIÊN
+            </div>
+            </div>
+        </div>
+    <!-- LOGO HEADER END-->
+	<script>
+		function w3_open() {
+		  //document.getElementById("main").style.marginLeft = "15%";
+		  document.getElementById("mySidebar").style.width = "60%";
+		  /*if($(window).width() > 767) {
+			document.getElementById("mySidebar").style.width = "15%";
+		  }
+		  else{
+			document.getElementById("mySidebar").style.width = "40%";
+		  }*/
+		  document.getElementById("mySidebar").style.display = "block";
+		  document.getElementById("openNav").style.display = 'none';
+		}
+		function w3_close() {
+		  document.getElementById("main").style.marginLeft = "0%";
+		  document.getElementById("mySidebar").style.display = "none";
+		  document.getElementById("openNav").style.display = "inline-block";
+		}
+	</script>
+		<div id="main">
+		
+<!-- MENU SECTION END-->
+<div class="content-wrapper">
+    <div class="container">
+                <div class="row">
+            <div class="col-md-12">
+                <h4 class="page-head-line">Danh sách các phiếu khảo sát đang hoạt động</h4>
+                <div class="group cta">
+                                            <div class="alert alert-warning">
+                            <i class="fa fa-bell-slash fa-2x"></i>
+                            <strong>&nbsp;&nbsp;Không có khảo sát nào đang hoạt động.</strong>
+                        </div>
+                                                        </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="page-head-line">Danh sách các phiếu khảo sát đã kết thúc trong kỳ</h4>
+                <div class="group cta">
+                                            <div class="alert alert-warning">
+                            <i class="fa fa-bell-slash fa-2x"></i>
+                            <strong>&nbsp;&nbsp;Không có khảo sát nào đã kết thúc trong kỳ.</strong>
+                        </div>
+                                                        </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="page-head-line">Lấy ý kiến góp ý</h4>
+                <div class="group cta">
+                    <article class="one_third"><a href="/opinion.php"><i class="fa fa-user"></i></a>
+                        <p>
+                            <a href="./opinion.php">DỰ THẢO SỨ MẠNG, TẦM NHÌN, MỤC TIÊU VÀ GIÁ TRỊ CỐT LÕI CỦA TRƯỜNG ĐẠI HỌC GIAO THÔNG VẬN TẢI</a>
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+        <!-- 2024-12-15 18:15:08 -->
+    </div>
+</div>
+</div>
+<!-- CONTENT-WRAPPER SECTION END -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    &copy; 2017 UTC | By : <a href="http://cait.utc.edu.vn/" target="_blank">Trung tâm ứng dụng CNTT - ĐH GTVT</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END-->
+    <!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY SCRIPTS -->
+    <script src="../js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="../js/bootstrap.js"></script>
+	<script src="../js/sidebar.js"></script>
+	<script src="../js/script.js"></script>
+	<script src="../js/bootstrap-datepicker.min.js"></script>
+	<script src="../js/jquery.form-validator.js"></script>
+	<script src="../js/jquery.validate.js?v=5dsjk"></script>
+</body>
+</html>

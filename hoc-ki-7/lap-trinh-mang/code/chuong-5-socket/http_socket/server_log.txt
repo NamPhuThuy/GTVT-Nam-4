@@ -1,0 +1,16 @@
+2024-11-14 22:09:26 - User user1 logged in
+2024-11-14 22:09:32 - User user2 logged in
+2024-11-14 22:09:36 - User user1 sent an HTTP request
+2024-11-14 22:09:39 - User user2 sent an HTTP request
+2024-11-14 22:14:48 - User user2 logged out
+2024-11-14 22:14:53 - User user1 logged out
+2024-12-15 17:03:34 - User user1 logged in
+2024-12-15 17:04:47 - User user1 logged out
+2024-12-15 17:04:59 - User user1 logged in
+2024-12-15 17:05:04 - User user1 sent an HTTP request
+2024-12-15 17:05:48 - User user1 logged in
+2024-12-15 17:06:02 - user1 downloaded server_log.txt
+2024-12-15 17:07:47 - User user1 logged out
+2024-12-15 18:09:02 - User user1 logged in
+2024-12-15 18:09:46 - User user1 logged in
+2024-12-15 18:09:47 - User user1 sent an HTTP request

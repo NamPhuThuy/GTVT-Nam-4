@@ -1,0 +1,9 @@
+Today: Mostly Cloudy, High: 33 °F, Today: Mostly cloudy, with a high near 33. South wind 7 to 10 mph. 
+Tonight: Snow LikelythenRain/SnowLikely, Low: 28 °F, Tonight: Snow likely before 4am, then a chance of rain and snow.  Cloudy, with a low around 28. South wind around 10 mph.  Chance of precipitation is 70%. New snow accumulation of less than a half inch possible. 
+Monday: Partly Sunnythen ChanceRain, High: 46 °F, Monday: A slight chance of rain before 7am, then a chance of rain after 5pm.  Partly sunny, with a high near 46. South wind around 11 mph.  Chance of precipitation is 30%. New precipitation amounts of less than a tenth of an inch possible. 
+Monday Night: Showers, Low: 40 °F, Monday Night: Showers.  Low around 40. South wind 14 to 18 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. 
+Tuesday: ChanceShowers, High: 45 °F, Tuesday: A chance of showers.  Mostly cloudy, with a high near 45. Southwest wind 10 to 13 mph.  Chance of precipitation is 40%.
+Tuesday Night: Mostly Cloudy, Low: 29 °F, Tuesday Night: Mostly cloudy, with a low around 29.
+Wednesday: Mostly Cloudythen ShowersLikely, High: 42 °F, Wednesday: Showers likely after 1pm.  Mostly cloudy, with a high near 42. Chance of precipitation is 60%.
+Wednesday Night: Rain/SnowLikely, Low: 26 °F, Wednesday Night: Rain showers likely before 10pm, then rain and snow showers likely between 10pm and 1am, then a chance of snow showers after 1am.  Mostly cloudy, with a low around 26. Chance of precipitation is 70%.
+Thursday: Chance SnowShowers, High: 33 °F, Thursday: A chance of snow showers.  Mostly cloudy, with a high near 33. Chance of precipitation is 40%.
