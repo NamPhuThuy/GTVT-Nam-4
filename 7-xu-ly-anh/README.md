@@ -5,7 +5,7 @@
   - [Phần 2: Một số mô hình màu](#phần-2-một-số-mô-hình-màu)
   - [Phần 3: Phần 3: Xử lý ảnh là gì? Ứng dụng của xử lý ảnh](#phần-3-xử-lý-ảnh-là-gì-ứng-dụng-của-xử-lý-ảnh)
   - [Phần 4: Các giai đoạn của quá trình xử lý ảnh](#phần-4-các-giai-đoạn-của-quá-trình-xử-lý-ảnh)
-- [Chương 2: Thu nhận ảnh và biểu diễn ảnh](#chương-2-thu-nhận-và-biểu-diễn-ảnh)
+- [Chương 2: Thu nhận ảnh và biểu diễn ảnh](#chương-2-thu-nhận-ảnh-và-biểu-diễn-ảnh)
   - [Phần 1: Thu nhận ảnh](#phần-1-thu-nhận-ảnh-image-acquisition)
   - [Phần 2: Biểu diễn ảnh](#phần-2-biểu-diễn-ảnh-digital-image-representation)
 - [Chương 3: Cải thiện hình ảnh](#chương-3-cải-thiện-hình-ảnh)

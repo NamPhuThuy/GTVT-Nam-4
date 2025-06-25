@@ -1,7 +1,7 @@
 <a id="readme-top"></a>
 
-- [Chương 1](#chương-1)
-  - [Phần 1](#phần-1-a)
+- [Chương 1: Internet và lập trình mạng](#chương-1-internet-và-lập-trình-mạng)
+  - [Phần 1: A](#phần-1-a)
   - [Phần 1](#phần-2-b)
 - [Chương 2](#chương-2)
   - [Phần 1](#phần-1-c)

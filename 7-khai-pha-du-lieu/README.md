@@ -1,12 +1,9 @@
 # Chương trình học 
-Nội dung của học phần này sẽ tìm hiểu bám sát theo cuốn **Data Mining - Concepts and Techniques**
-Giảng viên: Nguyễn Quốc Tuấn
-Tính điểm: 0.4 * Điểm quá trình + 0.6 * Điểm thi KTHP
+Nội dung của học phần này sẽ tìm hiểu bám sát theo cuốn **Data Mining - Concepts and Techniques**  
 
-## Tổng quan nội dung học
 - Tìm hiểu về từng bước của quá trình Khai phá dữ liệu: thu nhận data -> làm sạch data ->... -> lưu trữ data
 - Có thể sử dụng các công cụ có sẵn (Rapid Miner,..) hoặc tự code (Python, R,..)
-- Bài tập lớn: 
+- Bài tập lớn:
   - Xây dựng 1 ứng dụng khai phá dữ liệu với bài toán cụ thể
   - Tối đa 5 người
   - Không yêu cầu ứng dụng có giao diện
@@ -42,12 +39,3 @@ Tính điểm: 0.4 * Điểm quá trình + 0.6 * Điểm thi KTHP
       - Tâm của mỗi cụm nằm ở đâu?
       - Mỗi cụm sẽ gồm những điềm nào?
     - Ý 2 (2đ): Kết quả cuối cùng thi được sẽ gồm những cụm nào?
-
-## Đề ôn tập mẫu
-Câu 1. Cho tập dữ liệu thu thập được của 2 tập giá trị của X và Y như sau:
-
-- Hãy xác định các giá trị trung bình, trung vị, mode của X và Y. 
-- Vẽ biểu đồ Boxplot của X và Y. 
-- Sử dụng phương pháp chuẩn hóa min-max để chuẩn hóa dữ liệu quan sát của X và Y về đoạn [1, 5]. 
-- Hãy làm trơn dữ liệu ban đầu của X và Y bằng phương pháp làm trơn trung bình (bin means), trong đó việc phân chia thùng theo chiều sâu (Equal-depth) với số bin là 3. Mô tả các bước thực hiện. 
-- Xác định hệ số tương quan giữa X và Y.
